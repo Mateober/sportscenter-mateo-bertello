@@ -1,0 +1,180 @@
+.contacto__background {
+    background-color: White;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacto__container {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__container--titulo {
+    padding: 0 30px;    
+    padding-top: 30px;
+    text-align: center;
+
+    h2 {
+        color: black;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+.contacto__container--form {
+    padding: 25px 30px;
+    form {
+        .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;           
+            .input-box {
+                margin-bottom: 15px;
+                width: calc(100% / 2 - 20px);
+                p {
+                    margin-bottom: 5px;
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 400;                    
+                }
+                span {
+                    color: red;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                input {
+                    height: 45px;
+                    width: 100%;
+                    padding-left: 15px;                    
+                    outline: none;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    border-bottom-width: 2px;                    
+                    transition: all 0.3s ease;                    
+                    color: Black;
+                    font-size: 16px;
+                    font-weight: 400;
+
+                    &:focus {
+                        border-color: Black;
+                    }                                   
+                }
+            }
+
+            .textarea-box {
+                margin-bottom: 15px;
+                width: 100%;
+                p {
+                    margin-bottom: 5px;
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 400;                    
+                }
+                span {
+                    color: red;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                textarea {
+                    width: 100%;
+                    height: auto;
+                    outline: none;                    
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    padding-left: 15px;
+                    padding-top: 10px;    
+                    border-bottom-width: 2px;
+                    transition: all 0.3s ease;                            
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 400;
+                    &:focus {
+                        border-color: black;
+                    }                                   
+                }
+            }
+        }
+    }
+}
+
+.contacto__atencion {
+    background-color: #5A5A5A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--item {
+        display: flex;
+        align-items: center;
+        color: White;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 20px;     
+        i {
+            padding-right: 20px;
+            font-size: 25px;
+        }
+    }
+}
+
+
+.contacto__container--map {
+    width: 50%;
+}
+
+.tablaConsultas {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+tr td {
+    border: 3px solid rgb(51, 50, 50);
+    background-color: #ccc;
+}
+
+.tablaNombre, .tablaTelefono, .tablaEmail, .TablaDireccion {
+    text-align: center;
+    width: 15%;
+}
+
+.tablaMensaje {
+    width: 40%;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .contacto__container {
+        max-width: 60%;
+    }
+
+    .contacto__container--map {
+        width: 40%;
+    }    
+}
+
+@media screen and (max-width:720px) {
+    .contacto__container {
+        max-width: 100%;
+    }
+    .contacto__container--form {
+        form {
+            .user-details {
+                .input-box {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .contacto__container--map {
+        display: none;
+    }    
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="a" />
+        <meta name="description" content="a" />
+        <title>Sportscenter</title>
+        <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon" />
+        <!-- ----------BOOTSTRAP---------- -->
+        <!-- ----------CSS---------- -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- ----------ICONS FONTAWESOME---------- -->
+        <script src="https://kit.fontawesome.com/d0be8199f6.js" crossorigin="anonymous"></script>
+        <!-- ----------GOOGLE FONTS---------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+        <!-- BOX ICONS -->
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="nav container">
+                <i class="bx bx-menu burger-btn" id="burger-icon"></i>
+                <i class="bx bx-x cross-btn" id="cross-icon"></i>
+                <h1><a href="./index.html" class="logo">SPORTSCENTER</a></h1>
+                <div class="headerSections">
+                    <a href="./index.html">Inicio</a>
+                    <a href="./pages/contacto.html">Contacto</a>
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"><span id="contador">0</span></i>
+                    
+                </div>
+                <div class="cart">
+                    <h2 class="cart-title">Tu Carrito</h2>
+                    <div class="cart-content"></div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <button type="button" class="btn-buy">Pagá ahora</button>
+                    <i class="bx bx-x" id="close-cart"></i>
+                </div>
+            </div>
+        </header>
+        <div class="burger-menu" id="burger-menu">
+            <a href="./index.html">
+                <p>Inicio</p>
+            </a>
+            <a href="./pages/contacto.html">
+                <p>Contacto</p>
+            </a>
+        </div>
+        <main class="bg" id="main">
+            <h1>hola</h1>
+            <div class="productCatalog" id="productCatalog"></div>
+            <h1>hola</h1>
+        </main>
+        <footer></footer>
+        <script src="js/template.js"></script>
+    </body>
+</html>
