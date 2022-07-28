@@ -42,45 +42,4 @@ formulario.onsubmit = (event) => {
     limpiarTabla();
     agregarConsultasTabla();
     formulario.reset();
-
-};
-
-function limpiarTabla() {
-    while (tabla.rows.length > 1) {
-        tabla.deleteRow(1);
-    }
-}
-//----------------------AGREGANDO CONSULTAS A TABLA----------------------
-function agregarConsultasTabla() {
-    consultas.forEach((consulta) => {
-        let tabla = document.getElementById('tablaConsultasEscritas');
-        let filaTabla = document.createElement('tr');
-
-        filaTabla.innerHTML = `
-        <td>${consulta.nombreApellido} </td>
-        <td>${consulta.telefono} </td>
-        <td>${consulta.email} </td>
-        <td>${consulta.direccion} </td>
-        <td>${consulta.mensaje} </td>
-        `;
-
-        tabla.append(filaTabla);
-    });
-}
-//----------------------------------------------
-let burgerIcono = document.querySelector("#burger-icon");
-let burgerMenu = document.querySelector("#burger-menu");
-let crossIcono = document.querySelector("#cross-icon");
-
-/* Open Menu*/
-burgerIcono.onclick = () => {
-  burgerMenu.classList.add("active");
-  burgerIcono.classList.add("hide");
-  crossIcono.classList.add("active");
-};
-/* Close Menu */
-crossIcono.onclick = () => {
-  burgerMenu.classList.remove("active");
-  crossIcono.classList.remove("active");
-  burgerIcono.classList.remove("hide");
 };

@@ -7,13 +7,14 @@
     padding: 20px;
     background-color: white;
     box-shadow: -2px 0 4% hsl(0 4% 15% / 10%);
-    transition: 0.5s ease;
+    transition: 0.8s;
     overflow-x: hidden;
     overflow-y: scroll;
     z-index: 15;
 }
 .cart.active {
     right: 0;
+    transition: 0.5s;
 }
 .cart-title {
     text-align: center;
