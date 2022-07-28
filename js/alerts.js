@@ -23,3 +23,15 @@ function alertVacio() {
         confirmButtonText: 'OK',
     });
 }
+
+function alertProductoCarrito(){
+    Toastify({
+        text: "Producto agregado al carrito",
+        duration: 3000,
+        gravity: 'bottom',
+        position: 'left',
+        style: {
+            background: '#229ACD'
+        }
+    }).showToast();
+}

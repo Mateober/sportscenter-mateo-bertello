@@ -1,26 +1,36 @@
 /* Cart Working */
-if (document.readyState == 'loading') {
+document.readyState == 'loading' ? document.addEventListener('DOMContentLoaded', ready) : ready();
+/* if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
     ready();
-}
+} */
 
 /* Maiking Function */
 function ready() {
+    if (JSON.parse(localStorage.getItem('counter')) == null) {
+        localStorage.setItem('counter', '0');
+    }
     contador.textContent = JSON.parse(localStorage.getItem('counter'));
-    document.getElementsByClassName('total-price')[0].innerHTML = "$" + JSON.parse(localStorage.getItem('total'));
-    /* REMOVE ITEM */
+
+    let DOMTotal = document.getElementsByClassName('total-price')[0];
+    DOMTotal.innerText = '$' + JSON.parse(localStorage.getItem('total'));
+    if (JSON.parse(localStorage.getItem('total')) == null) {
+        DOMTotal.innerText = '$0';
+    }
+
     const productos1 = JSON.parse(localStorage.getItem('carrito') || '[]');
     for (const product of productos1) {
         addProductToCart(product.id, product.title, product.price, product.productImg);
     }
 
+    /* REMOVE ITEM */
     let removeCartButtons = document.getElementsByClassName('cart-remove');
     for (let i = 0; i < removeCartButtons.length; i++) {
         let button = removeCartButtons[i];
         button.addEventListener('click', removeCartItem);
     }
-
+    /* QUANTITY INPUT */
     let quantityInput = document.getElementsByClassName('cart-quantity');
     for (let i = 0; i < quantityInput.length; i++) {
         let input = quantityInput[i];
@@ -44,6 +54,7 @@ function buyButtonClicked() {
         alertVacio();
     } else {
         alertComprar();
+
         for (let i = productos1.length; i > 0; i--) {
             productos1.pop();
         }
@@ -57,7 +68,7 @@ function buyButtonClicked() {
         contador.textContent = JSON.parse(localStorage.getItem('counter'));
         updateTotal();
     }
-    
+
     carrito.classList.remove('active');
 }
 
@@ -98,6 +109,7 @@ function addCartClicked(event) {
     const existeProducto = productos1.find((producto) => producto.id == id);
     if (!existeProducto) {
         localStorage.setItem('carrito', JSON.stringify([...productos1, { id, title, price, productImg }]));
+        alertProductoCarrito()
     }
 
     addProductToCart(id, title, price, productImg);

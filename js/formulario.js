@@ -7,7 +7,6 @@ let inputTelefono;
 let inputEmail;
 let inputDireccion;
 let inputMensaje;
-let tabla;
 //----------------------OBJETOS----------------------
 class Consulta {
     constructor(telefono, nombreApellido, email, direccion, mensaje) {
@@ -26,7 +25,6 @@ function inicializarElementos() {
     inputEmail = document.getElementById('email');
     inputDireccion = document.getElementById('direccion');
     inputMensaje = document.getElementById('mensaje');
-    tabla = document.getElementById('tablaConsultas');
 }
 inicializarElementos();
 
@@ -39,7 +37,8 @@ formulario.onsubmit = (event) => {
     consultas.push(nuevaConsulta);
 
     consultas.reverse();
-    limpiarTabla();
-    agregarConsultasTabla();
     formulario.reset();
+    console.log(consultas);
 };
+
+
