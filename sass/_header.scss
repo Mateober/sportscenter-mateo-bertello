@@ -135,3 +135,9 @@ header {
         font-size: 27px;
     }
 }
+
+@media screen and (max-width:720px) {
+    .nav {
+        width: 100%;
+    }
+}

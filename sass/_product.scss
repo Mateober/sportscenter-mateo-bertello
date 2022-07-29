@@ -66,6 +66,9 @@
             transition: 0.5s;
             opacity: 0;
             height: 35px;
+            &:hover {
+                background-color: #1a4e64;
+            }
         }
     }
 }
@@ -82,6 +85,12 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 20px;
+}
+
+@media screen and (max-width:1280px) {
+    .productContainer button{
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width:720px) {

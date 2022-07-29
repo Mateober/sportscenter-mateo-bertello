@@ -10,7 +10,7 @@ function alertComprar() {
 function alertRepetido() {
     Swal.fire({
         title: 'Ya tienes este producto en el carrito',
-        text: 'Puede cambiar la cantidad desde allí',
+        text: 'Puedes cambiar la cantidad desde allí',
         icon: 'warning',
         confirmButtonText: 'OK',
     });
