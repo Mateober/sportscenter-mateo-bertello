@@ -5,9 +5,11 @@ img {
 /* HEADER */
 header {
     width: 100%;
-    background-color: #229ACD;
+    background-color: #229acd;
     display: flex;
     justify-content: center;
+    position: fixed;
+    z-index: 10;
 }
 .headerSections {
     display: flex;
@@ -20,7 +22,7 @@ header {
         font-size: 25px;
         &:hover {
             transform: scale(1.1, 1.1);
-            color: #5A5A5A;
+            color: #5a5a5a;
             transition: 0.3s;
         }
     }
@@ -47,7 +49,7 @@ header {
     color: white;
     font-weight: 700;
     &:hover {
-        color: #5A5A5A;
+        color: #5a5a5a;
         transition: 0.3s;
     }
 }
@@ -59,7 +61,7 @@ header {
 }
 #cart-icon:hover {
     transform: scale(1.2, 1.2);
-    color: #5A5A5A;
+    color: #5a5a5a;
     transition: 0.3s;
 }
 
@@ -101,9 +103,8 @@ header {
 
 .burger-menu a:hover {
     font-size: 35px;
-    color: #5A5A5A;
+    color: #5a5a5a;
 }
-
 
 @media (max-width: 1080px) {
     .nav {
@@ -136,7 +137,7 @@ header {
     }
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width: 720px) {
     .nav {
         width: 100%;
     }

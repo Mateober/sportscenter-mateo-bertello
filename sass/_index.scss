@@ -1,0 +1,66 @@
+.contenedor-general {
+    padding-top: 70px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+.contenedor-imagen {
+    height: 100%;
+    width: 55%;
+    img {
+        height: 100%;
+    }
+}
+.contenedor-texto {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    font-size: 70px;
+    font-weight: 700;
+    .palabra {
+        color: #229acd;
+    }
+}
+.filtro-marca {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    button {
+        font-size: 30px;
+        padding: 20px;
+        margin: 20px;
+        color: white;
+        background-color: #229acd;
+        border-radius: 20px;
+        &:hover {
+            background-color: #0c3141;
+        }
+    }
+}
+
+@media (max-width: 1680px) {
+    .contenedor-general {
+        height: 100%;
+    }
+    .contenedor-imagen {
+        height: auto;
+    }
+    .contenedor-texto {
+        width: 50%;
+        font-size:50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor-texto {
+        font-size:30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .contenedor-texto {
+        font-size:20px;
+    }
+}

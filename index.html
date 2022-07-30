@@ -20,7 +20,7 @@
         <!-- BOX ICONS -->
         <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
         <!-- TOASTIFY -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
     </head>
     <body>
         <header>
@@ -32,7 +32,6 @@
                     <a href="./index.html">Inicio</a>
                     <a href="./pages/contacto.html">Contacto</a>
                     <i class="fa-solid fa-cart-shopping" id="cart-icon"><span id="contador">0</span></i>
-                    
                 </div>
                 <div class="cart">
                     <h2 class="cart-title">Tu Carrito</h2>
@@ -55,11 +54,74 @@
             </a>
         </div>
         <main class="bg" id="main">
+            <div class="contenedor-general">
+                <div class="contenedor-imagen">
+                    <img src="./assets/SportS CENTER.png" alt="">
+                </div>
+                <div class="contenedor-texto">
+                    <h2 class="titulo">Somos<br><span class="typed"></span></h2>
+                </div>                                
+            </div>
+
+
+            <div class="filtro-marca">
+                <button id="button-adidas" type="button">Adidas</button>
+                <button id="button-asics" type="button">Asics</button>
+                <button id="button-lacoste" type="button">Lacoste</button>
+                <button id="button-nike" type="button">Nike</button>
+            </div>
             <div class="productCatalog" id="productCatalog"></div>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="container__footer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Sportscenter</h4>
+                        <ul>
+                            <li><a href="#">Sobre Nosotros</a></li>
+                            <li><a href="#">Nuestros Servicios</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Programa de afiliacion</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Consigue Ayuda</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Envíos</a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                            <li><a href="#">Estado Del Pedido</a></li>
+                            <li><a href="#">Ociones De Pago</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Zapatillas</h4>
+                        <ul>
+                            <li><a href="#">Niños</a></li>
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="#">Mujer</a></li>
+                            <li><a href="#">Unisex</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Síganos</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <span>© 2022 Copyright | Proyecto creado por Mateo Bertello</span>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/typed.js"></script>
         <script src="js/stock.js"></script>
         <script src="js/app.js"></script>
         <script src="js/modal.js"></script>

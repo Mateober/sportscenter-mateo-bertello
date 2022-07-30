@@ -17,6 +17,7 @@
     padding: 0 30px;    
     padding-top: 30px;
     text-align: center;
+    padding-top: 100px;
 
     h2 {
         color: black;
@@ -147,7 +148,30 @@ tr td {
     width: 40%;
 }
 
-
+    .boton__enviar {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background: #229ACD;
+        box-shadow: 0 5px #095779;
+      }
+      .boton__enviar:hover {
+        box-shadow: 0 3px #0d6f99;
+        top: 1px;
+      }
+      .boton__enviar:active {
+        box-shadow: 0 0 #000000;
+        top: 5px;
+      }
 
 @media screen and (max-width:1200px) {
     .contacto__container {

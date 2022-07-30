@@ -76,6 +76,7 @@ function buyButtonClicked() {
 function removeCartItem(event) {
     let buttonClicked = event.target;
     buttonClicked.parentElement.remove();
+    alertProductoFueraCarrito();
 
     const id = buttonClicked.parentElement.id;
     const productos1 = JSON.parse(localStorage.getItem('carrito') || '[]');
@@ -109,7 +110,7 @@ function addCartClicked(event) {
     const existeProducto = productos1.find((producto) => producto.id == id);
     if (!existeProducto) {
         localStorage.setItem('carrito', JSON.stringify([...productos1, { id, title, price, productImg }]));
-        alertProductoCarrito()
+        alertProductoCarrito();
     }
 
     addProductToCart(id, title, price, productImg);

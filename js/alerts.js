@@ -24,14 +24,26 @@ function alertVacio() {
     });
 }
 
-function alertProductoCarrito(){
+function alertProductoCarrito() {
     Toastify({
-        text: "Producto agregado al carrito",
-        duration: 3000,
+        text: 'Producto agregado al carrito',
+        duration: 1500,
         gravity: 'bottom',
         position: 'left',
         style: {
-            background: '#229ACD'
-        }
+            background: '#229ACD',
+        },
+    }).showToast();
+}
+
+function alertProductoFueraCarrito() {
+    Toastify({
+        text: 'Producto eliminado del carrito',
+        duration: 1500,
+        gravity: 'bottom',
+        position: 'left',
+        style: {
+            background: '#DF310C',
+        },
     }).showToast();
 }
