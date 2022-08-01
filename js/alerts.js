@@ -18,7 +18,7 @@ function alertRepetido() {
 
 function alertVacio() {
     Swal.fire({
-        title: 'No hay nada en el carrito',
+        title: 'El carrito está vacío',
         icon: 'warning',
         confirmButtonText: 'OK',
     });

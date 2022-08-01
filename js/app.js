@@ -8,6 +8,7 @@ document.readyState == 'loading' ? document.addEventListener('DOMContentLoaded',
 
 /* Maiking Function */
 function ready() {
+    btnTodos.classList.add("backgroundColorButton")
     if (JSON.parse(localStorage.getItem('counter')) == null) {
         localStorage.setItem('counter', '0');
     }

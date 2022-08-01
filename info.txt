@@ -1,1 +1,5 @@
-Proyecyo final para coderhouse
+Proyecto Final del curso de Javascript para Coderhouse.
+Mateo Bertello
+
+
+

@@ -56,21 +56,27 @@
         <main class="bg" id="main">
             <div class="contenedor-general">
                 <div class="contenedor-imagen">
-                    <img src="./assets/SportS CENTER.png" alt="">
+                    <img src="./assets/imagen-index.png" alt="">
                 </div>
                 <div class="contenedor-texto">
                     <h2 class="titulo">Somos<br><span class="typed"></span></h2>
                 </div>                                
             </div>
-
-
-            <div class="filtro-marca">
-                <button id="button-adidas" type="button">Adidas</button>
-                <button id="button-asics" type="button">Asics</button>
-                <button id="button-lacoste" type="button">Lacoste</button>
-                <button id="button-nike" type="button">Nike</button>
+            <div class="subtitulo">
+                <hr>
+                <h3>Nuestros Productos</h3>
+                <hr>
             </div>
-            <div class="productCatalog" id="productCatalog"></div>
+            <section class="layout">
+                <div class="filtro-marca">
+                    <button type="button" id="btn-todos">Todos</button>
+                    <button type="button" id="btn-adidas">Adidas</button>
+                    <button type="button" id="btn-asics">Asics</button>
+                    <button type="button" id="btn-lacoste">Lacoste</button>
+                    <button type="button" id="btn-nike">Nike</button>
+                </div>
+                <div class="productCatalog" id="productCatalog"></div>
+            </section>
         </main>
         <footer class="footer">
             <div class="container__footer">
@@ -81,7 +87,7 @@
                             <li><a href="#">Sobre Nosotros</a></li>
                             <li><a href="#">Nuestros Servicios</a></li>
                             <li><a href="#">Política de privacidad</a></li>
-                            <li><a href="#">Programa de afiliacion</a></li>
+                            <li><a href="#">Programa de afiliación</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -91,7 +97,7 @@
                             <li><a href="#">Envíos</a></li>
                             <li><a href="#">Devoluciones</a></li>
                             <li><a href="#">Estado Del Pedido</a></li>
-                            <li><a href="#">Ociones De Pago</a></li>
+                            <li><a href="#">Opciones De Pago</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -125,6 +131,7 @@
         <script src="js/stock.js"></script>
         <script src="js/app.js"></script>
         <script src="js/modal.js"></script>
+        <script src="js/filter.js"></script>
         <script src="js/alerts.js"></script>
     </body>
 </html>

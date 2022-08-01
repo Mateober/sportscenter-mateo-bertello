@@ -12,6 +12,7 @@
         height: 100%;
     }
 }
+
 .contenedor-texto {
     text-align: center;
     width: 45%;
@@ -22,15 +23,46 @@
         color: #229acd;
     }
 }
+
+.arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    hr {
+        width: 100%;
+        border-color: #000000;
+    }
+    h3 {
+        width: auto;
+        text-align: center;
+        white-space: nowrap;
+        margin: 10px;
+        color: #000000;
+        text-transform: uppercase;
+        font-size: 35px;
+        word-spacing: 10px;
+    
+    }    
+}
+
 .filtro-marca {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     button {
-        font-size: 30px;
-        padding: 20px;
-        margin: 20px;
+        width: 100px;
+        font-size: 20px;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
         color: white;
         background-color: #229acd;
         border-radius: 20px;
@@ -40,7 +72,27 @@
     }
 }
 
-@media (max-width: 1680px) {
+.backgroundColorButton {
+    background-color: #0c3141 !important;
+}
+
+.layout {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: 'ele1 ele2';
+}
+.filtro-marca {
+    grid-area: ele1;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.productCatalog {
+    grid-area: ele2;
+}
+
+@media screen and (max-width: 1680px) {
     .contenedor-general {
         height: 100%;
     }
@@ -49,18 +101,42 @@
     }
     .contenedor-texto {
         width: 50%;
-        font-size:50px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+    .filtro-marca {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 800px) {
     .contenedor-texto {
-        font-size:30px;
+        font-size: 30px;
+    }
+    .filtro-marca {
+        button {
+            margin: 5px;
+        }
+    }
+    .subtitulo {
+        h3 {
+            font-size: 25px;
+            word-spacing: 4px;
+        }
     }
 }
 
 @media screen and (max-width: 720px) {
     .contenedor-texto {
-        font-size:20px;
+        font-size: 20px;
     }
 }
