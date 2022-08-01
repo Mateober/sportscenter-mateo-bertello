@@ -38,6 +38,12 @@
     hr {
         width: 100%;
         border-color: #000000;
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 2px solid rgb(0, 0, 0);
+        margin: 1em 0;
+        padding: 0;
     }
     h3 {
         width: auto;
@@ -128,6 +134,7 @@
         }
     }
     .subtitulo {
+        margin-bottom: 0;
         h3 {
             font-size: 25px;
             word-spacing: 4px;
