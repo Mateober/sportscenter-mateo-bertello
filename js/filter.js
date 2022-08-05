@@ -1,4 +1,7 @@
-let productosAdidas = document.querySelectorAll('.Adidas');
+fetch('./data.json')
+    .then((resinicial) => resinicial.json())
+    .then((res) => {
+      let productosAdidas = document.querySelectorAll('.Adidas');
 let productosAsics = document.querySelectorAll('.Asics');
 let productosLacoste = document.querySelectorAll('.Lacoste');
 let productosNike = document.querySelectorAll('.Nike');
@@ -87,3 +90,4 @@ function soloNike() {
     btnLacoste.classList.remove("backgroundColorButton")
     btnNike.classList.add("backgroundColorButton")     
 }
+    });
