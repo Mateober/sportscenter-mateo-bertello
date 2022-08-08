@@ -40,5 +40,3 @@ formulario.onsubmit = (event) => {
     formulario.reset();
     console.log(consultas);
 };
-
-
